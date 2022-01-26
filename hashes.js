@@ -36,3 +36,7 @@ people.forEach(function (h) {
     console.log(s);
   });
 });
+people.forEach(function (h) {
+  h.email = `${h.first_name}${h.last_name}@gmail.com`;
+  console.log(h.email);
+});

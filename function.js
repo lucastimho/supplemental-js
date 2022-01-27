@@ -12,3 +12,9 @@ function printLyrics() {
   console.log("I'll tell you how I became the prince of a town called Bel-Air");
 }
 printLyrics();
+
+var array = [2, 4, 6];
+var newArray = array.reduce(function (p, x) {
+  return (p *= x);
+});
+console.log(newArray);

@@ -22,3 +22,9 @@ console.log(newArray);
 function convertFToC(x) {
   return x - 32 * 0.5556;
 }
+
+var array = [10, 3, 4, 55, 32, 6, 1];
+var lessThanFive = array.filter(function (n) {
+  return n < 5;
+});
+console.log(lessThanFive);

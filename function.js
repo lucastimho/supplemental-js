@@ -23,8 +23,21 @@ function convertFToC(x) {
   return x - 32 * 0.5556;
 }
 
-var array = [10, 3, 4, 55, 32, 6, 1];
-var lessThanFive = array.filter(function (n) {
+var a = [10, 3, 4, 55, 32, 6, 1];
+var lessThanFive = a.filter(function (n) {
   return n < 5;
 });
 console.log(lessThanFive);
+
+function sayHello(x) {
+  var text = "";
+  for (let i = 0; i < x; i++) {
+    text += "hello";
+  }
+  return text;
+}
+console.log(sayHello(4));
+
+function double(n) {
+  return n * 2;
+}

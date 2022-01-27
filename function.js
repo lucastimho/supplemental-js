@@ -18,3 +18,7 @@ var newArray = array.reduce(function (p, x) {
   return (p *= x);
 });
 console.log(newArray);
+
+function convertFToC(x) {
+  return x - 32 * 0.5556;
+}

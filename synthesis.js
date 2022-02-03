@@ -60,3 +60,17 @@ function code(a) {
   return d.join("");
 }
 console.log(code("hello"));
+
+var letterGroups = [
+  ["a", "b", "z"],
+  ["c", "d"],
+  ["e", "f"],
+  ["g", "h", "i", "j"],
+];
+var newArray = [];
+letterGroups.forEach(function (a) {
+  a.forEach(function (s) {
+    newArray.push(s);
+  });
+});
+console.log(newArray.join(""));

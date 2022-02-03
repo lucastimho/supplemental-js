@@ -11,3 +11,14 @@ var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
 for (let i = 0; i < letters.length; i += 2) {
   console.log(letters[i]);
 }
+
+var letter = [
+  ["a", "b"],
+  ["c", "d"],
+  ["e", "f"],
+  ["g", "h"],
+  ["i", "j"],
+];
+letter.forEach(function (a) {
+  console.log(a[1]);
+});

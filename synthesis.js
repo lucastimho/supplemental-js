@@ -74,3 +74,13 @@ letterGroups.forEach(function (a) {
   });
 });
 console.log(newArray.join(""));
+
+function pigLatin(s) {
+  let a = s.split("");
+  a.push(a[0]);
+  a.push("ay");
+  a.shift();
+  var b = a.join("");
+  return b;
+}
+console.log(pigLatin("marmalade"));

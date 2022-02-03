@@ -84,3 +84,26 @@ function pigLatin(s) {
   return b;
 }
 console.log(pigLatin("marmalade"));
+
+var people = [
+  {
+    first_name: "Robert",
+    last_name: "Garcia",
+    hobbies: ["basketball", "chess", "phone tag"],
+  },
+  {
+    first_name: "Molly",
+    last_name: "Barker",
+    hobbies: ["programming", "reading", "jogging"],
+  },
+  {
+    first_name: "Kelly",
+    last_name: "Miller",
+    hobbies: ["cricket", "baking", "stamp collecting"],
+  },
+];
+people.forEach(function (h) {
+  h.hobbies.forEach(function (s) {
+    console.log(s.toUpperCase());
+  });
+});
